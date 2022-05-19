@@ -15,27 +15,37 @@ export type GreetingContainerPropsType = {
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
     const [name, setName] = useState <string>('') // need to fix any
     const [error, setError] = useState<string|null>(null) // need to fix any
-    const [disabled, setDisabled] = useState(false)
 
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        setError(null)// need to fix any
-        setName(e.currentTarget.value) // need to fix
-    }
+        if(e.currentTarget.value !=='') {
+            setError(null)// need to fix any
+            setName(e.currentTarget.value) // need to fix
 
+        } else {
+            setName('')
+            setError('Name is required')
+        }
+
+    }
 
     const addUser = () => {
         if(name.trim()!=='') {
-            addUserCallback(name)
-            alert('Hello '+ name +'!')
+            addUserCallback(name.trim())
+            alert('Hello '+ name.trim() +'!')
             setName('')
-            setDisabled(false)
         } else {
             setError('Name is required')
-            setDisabled(true)
         }
         // need to fix
     }
+
+    const onEnterPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === "Enter" && name) {
+            addUser()
+        }
+    }
+
     const totalUsers = users.length; // need to fix
 
     return (
@@ -45,7 +55,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
-            disabled={disabled}
+            onEnterPress={onEnterPress}
         />
     )
 }

@@ -1,5 +1,13 @@
 .active_filter {
-    background-color: #0D6EFD;
     color: azure;
-    border: 1px solid #0a58ca;
+}
+
+.priority {
+    background-color: #67AAB7;
+    opacity: 50%;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    padding: 0 4px;
 }

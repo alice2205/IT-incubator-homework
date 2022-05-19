@@ -1,3 +1,6 @@
 .App {
-    background-color: cornsilk;
+    background-color: #f1e3dd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

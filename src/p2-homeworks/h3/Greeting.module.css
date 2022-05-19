@@ -12,17 +12,18 @@
     height: 32px;
 }
 
-.button {
-    width: auto;
-    height: 32px;
-    background-color: #0D6EFD;
-    border-radius: 0.25rem;
-    color: azure;
-    border: 1px solid #0a58ca;
+/*.button {*/
+/*    width: auto;*/
+/*    height: 32px;*/
+/*    background-color: #0D6EFD;*/
+/*    border-radius: 0.25rem;*/
+/*    color: azure;*/
+/*    border: 1px solid #0a58ca;*/
+/*    */
 
-    padding: 8px 16px;
-    margin: 8px;
-}
+/*    padding: 8px 16px;*/
+/*    margin: 8px;*/
+/*}*/
 .button:hover {
     background-color: #0b5ed7;
     border-color: #0a58ca;
@@ -54,4 +55,8 @@ input:focus {
     color: #212529;
     background-color: #fff;
 
+}
+
+.button:disabled {
+    background-color: gray;
 }

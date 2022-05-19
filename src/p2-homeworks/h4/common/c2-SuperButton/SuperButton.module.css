@@ -1,7 +1,42 @@
 .default {
+    background: #67AAB7;
+    color:  #FFFFFF;
+    border: 1px solid #017187;
+}
 
+.default:active {
+    background: #017187;
+    border: none;
+}
+.default:focus {
+    background: #017187;
+    border: none;
 }
 
 .red {
-    background: red;
+    background: #F39C91;
+    border: 2px solid #ED6A5A;
+}
+
+.red:active {
+    background: #E73A23;
+    color: white;
+}
+
+.button {
+    cursor: pointer;
+    padding: 8px 24px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    outline: none;
+    line-height: 150%;
+}
+
+.button:disabled {
+    border: 2px solid #CACACA;
+    box-sizing: border-box;
+    background: #E9E9E9;
+    color: #A9A9A9;
+    cursor: default;
 }

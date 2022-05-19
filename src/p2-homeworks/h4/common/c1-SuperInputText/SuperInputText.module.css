@@ -1,12 +1,42 @@
 .superInput {
+    text-align: center;
+    width: 190px;
+    padding: 24px 32px;
+    margin-bottom: 10px;
+    background: none;
 
+    border: 2px solid #A9A9A9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.superInput:focus {
+    background: none;
+    border-color: #017187;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    text-align: center;
+    width: 190px;
+    padding: 24px 32px;
+    background: none;
+    font-size: 16px;
+    color: #E25C5C;
+
+    border: 2px solid #E25C5C;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+}
+
+.errorInput:focus {
+    background: none;
+    border: 2px solid #017187;
 }
 
 .error {
-    color: red;
+    color: #E25C5C;
+    margin-bottom: 20px;
 }
