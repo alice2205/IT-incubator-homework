@@ -1,0 +1,29 @@
+.container {
+    width: 400px;
+    background-color: #67AAB7;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    align-items: center;
+}
+
+.container_link {
+    text-decoration: none;
+    color: white;
+}
+
+.menu_btn {
+    width: 30px;
+    height: 30px;
+    background-color: #16a085;
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+    transform: translate(-410px);
+}
+.menu_container:hover {
+    transform: translate(0);
+}

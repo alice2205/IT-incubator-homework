@@ -3,7 +3,7 @@ label {
 }
 
 .checkbox {
-   appearance: none;
+    appearance: none;
     width: 20px;
     height: 20px;
     background-color: #E9E9E9;
@@ -13,6 +13,6 @@ label {
 .checkbox:checked {
     appearance: none;
     background-image: url("iconsCheckbox.png");
-    background-size: 70%;
+    background-size: 100%;
 
 }

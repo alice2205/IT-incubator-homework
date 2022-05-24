@@ -1,0 +1,16 @@
+.work {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.work_space {
+    width: 500px;
+}
+
+h3 {
+    color: dimgray;
+    margin: 0;
+    font-size: 24px;
+}

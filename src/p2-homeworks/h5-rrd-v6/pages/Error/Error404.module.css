@@ -1,0 +1,43 @@
+html {
+    background-color: #f1e3dd;
+}
+
+.error_container {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    color: #0a58ca;
+    display: flex;
+    flex-direction: column;
+}
+
+.cats {
+    width: 500px;
+}
+
+h1 {
+    color: dimgray;
+}
+
+h3 {
+    color: dimgray;
+    margin: 0;
+}
+
+button {
+    width: 200px;
+    margin: 0;
+}
